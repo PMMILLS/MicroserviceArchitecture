@@ -10,6 +10,8 @@ namespace PresentationLayer.Models
 
         public string SecondText { get; set; }
 
+        public string ThridText { get; set; }
+
         [Display(Name = "Domain Time: ")]
         public DateTime Time { get; set; }
 

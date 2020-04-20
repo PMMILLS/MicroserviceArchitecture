@@ -21,6 +21,7 @@ namespace PresentationLayer.Controllers
         {
             DomainModel domainModel = buildDomainModel.BuildDomainModelData();
             var vm = mapper.Map<HomeViewModel>(domainModel);
+            vm.ThridText = "Text added in the Presentation layer - for demonstration purpose";
 
             return View(vm);
         }
