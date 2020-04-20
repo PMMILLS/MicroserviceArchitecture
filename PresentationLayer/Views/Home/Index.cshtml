@@ -1,0 +1,17 @@
+﻿@model PresentationLayer.Models.HomeViewModel 
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <div>
+            @Html.LabelFor(L => L.Text) @Model.Text
+        </div>
+        <br />
+        <div>
+            @Model.SecondText 
+            <br />
+            @Html.LabelFor(L => L.Time) @Model.Time
+        </div>
+    </div>
